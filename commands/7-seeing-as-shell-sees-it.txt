@@ -1,0 +1,5 @@
+1. Wildcards work using 'pathname expansion'.
+
+2. 'Ls -A' reveals "almost all" hidden files.
+
+3. Tilde '~' expands into the home directory of named user or current user if nothing is specified. `echo ~` outputs '/home/user'.
