@@ -1,0 +1,24 @@
+1. Bash uses Readline library to implement command line editing.
+
+2. Ctrl + a, Ctrl + e -> Move to the start/end of a line.
+   Ctrl + f, Ctrl + b -> Move one character forward/backward.
+   Alt + f, Alt + b -> Move one word forward/backward.
+   Ctrl + l -> Clear the screen.
+   Ctrl + d -> Delete a character at cursor location.
+
+3. Cutting and Pasting are also known as Killing and Yanking. Items are stored in a temporary buffer
+   called as kill-ring.
+
+4. Ctrl + k -> Kill from cursor location to end of line.
+   Ctrl + u -> Kill from cursor to beginning of the line.
+   Alt + d -> Kill from cursor location to end of the word.
+   Alt + backspace -> Kill from cursor to beginning of current word.
+   Ctrl + y -> Yank text from the kill-ring and insert it at cursor location.
+
+5. 'history' command shows the command line history.
+   Ctrl + r allows for a search in command line history.
+   When searching use 'Ctrl + j' to copy the command for further editing.
+   Ctrl + p, Ctrl + n -> previous/next item in history list.
+   Ctrl + o -> Execute current item in history list and move to next.
+
+   
