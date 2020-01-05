@@ -1,0 +1,59 @@
+List of shell commands and information abut linux.
+
+1. ls -l  ---> -rw-r--r-- first three are for files owner, next three files group, next for everyone else.
+
+---------- Links (Symbolic and Hard) ----------
+
+1. Every file has a single hard link.
+
+2. Hard link cannot reference to a file out of its file system.
+
+3. Hard link cannot reference a directory.
+
+4. Symbolic links are special files that contain a text pointer to the referenced file.
+
+5. Hard link point to what is called a inode.
+
+6. Symbolic links can reference directories.
+
+Command -> Hard Link: ln file link, Symbolic Link: ln -s item link.
+
+Symbolic link -> ln __relative_path_to_src_file__ __path_where_link_is_being_created__.
+
+---------- Working with Commands ----------
+
+1. Fours types of commands: Executable, Shell Builtin, Shell Function and Alias.
+
+2. 'type command', displays the type of a command from the above four types.
+
+3. 'which' tells you the exact location of command. Only work for executable programs.
+
+4. 'help' -> built in commands, 'man' -> executable commands.
+
+5. 'apropos search_term' -> Searches in man pages and lists commands.
+
+6. 'whatis' -> Displays a one line description of man page.
+
+7. 'info' -> Alternative to man page.
+
+8. "alias name='commands_here'" to create an alias, 'unalias' to delete an alias.
+
+---------- Redirection ----------
+
+1. Redirect standard output and standard input: 'ls -l > ls-output.txt 2>&1'. OR use '&>' (modern). 1,2 are file descriptors.
+
+2. '>' will truncate existing file and write to it, '>>' will append content in the file.
+
+3. '/dev/null' also known as bit bucket, is often used to silence the output of commands. Just redirect the output of a file to '/dev/null'. Example: 'ls -l /bin/usr 2> /dev/null'.
+
+4. '<' Use this to reverse redirection of data.
+
+5. Pipe output of one command as input to another command. Example 'ls -l /usr/bin | less'.
+
+6. 'uniq' is used to find duplicates.
+
+7. Use 'ws' to get the number of lines, words and bytes.
+
+8. 'head -n 5' 'tail -n 5', read the first 5 and last 5 lines of a file.
+
+9. 'tee' can be used to output to multiple files.
