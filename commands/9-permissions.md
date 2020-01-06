@@ -51,3 +51,7 @@
 |   a    |   All (means u, g and o).   |
 
 - Example: `u+x` will add execute permission for user, `u-xw` will remove execute and write permissions for the user. `+x` will add execute permissions for all (ugo). `ugo=wr` Set write and read for everyone, and remove execute if it exists.
+
+- `umsak` is to change the default permission of a created file.
+
+- `su` allows to start a shell as another user.
